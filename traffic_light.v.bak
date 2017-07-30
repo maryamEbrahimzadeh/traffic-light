@@ -1,0 +1,220 @@
+module traffic_light (TA,TB,A,B,R,Clk,A1,A2,B1,B2,A_light,B_light);
+input TA,TB,A,B,R,Clk;
+output [0:3] A1;
+output [0:3] A2;
+output [0:3] B1;
+output [0:3] B2;
+wire [0:3] Q1;
+wire [0:3] Q2;
+wire [0:6] F;
+wire [0:6] F5A;
+wire [0:6] F5B;
+output A_light,B_light;
+reg [0:2] x;
+reg clear1;
+reg clear2;
+reg cnt1;
+reg cnt2;
+reg T1,T2;
+reg clearF;
+reg clear5FA;
+reg clear5FB;
+//main counter 
+counter Acount1 (clear1,cnt1,Q1,Clk);
+counter Acount2 (clear2,cnt2&Q1[0]&Q1[3],Q2,Clk);
+//counter 125s
+Counter125 count125 ((F[0]&F[1]&F[2]&F[3]&F[4]&F[6])|clearF,1,F,Clk);
+Counter125 count5FA ((F5A[4]&F5A[6])|clear5FA,1,F5A,Clk);
+Counter125 count5FB ((F5B[4]&F5B[6])|clear5FB,1,F5B,Clk);
+//light of  A and B
+//T_FF tffA (T1,1,Clk);
+//T_FF tffB (T2,1,Clk);
+mux4x1_bh muxA (1,0,0,0,T1,x,A_light);
+mux4x1_bh muxB (0,0,1,0,T2,x,B_light);
+Mux4_2 light_A1 (0,0,0,0,Q1[0],Q1[1],Q1[2],Q1[3],A_light&(~x[0]),A1[0],A1[1],A1[2],A1[3]);
+Mux4_2 light_A2 (0,0,0,0,Q2[0],Q2[1],Q2[2],Q2[3],A_light&(~x[0]),A2[0],A2[1],A2[2],A2[3]);
+Mux4_2 light_B1 (0,0,0,0,Q1[0],Q1[1],Q1[2],Q1[3],B_light&(~x[0]),B1[0],B1[1],B1[2],B1[3]);
+Mux4_2 light_B2 (0,0,0,0,Q2[0],Q2[1],Q2[2],Q2[3],B_light&(~x[0]),B2[0],B2[1],B2[2],B2[3]);
+
+
+//for police
+  always @ (*)
+    begin
+    if(A)
+    begin
+    clear1=1;
+    clear2=1;
+    cnt1=0;
+    cnt2=0;
+    x[1]=0;
+    x[0]=0;
+    x[2]=0;
+    end
+  end
+  always @ (*)
+    begin
+    if(B)
+    begin
+    clear1=1;
+    clear2=1;
+    cnt1=0;
+    cnt2=0;
+    x[0]=0;
+    x[1]=1;
+    x[2]=0;
+    end
+  end
+  always @ (*)
+    begin
+    if(R&(A|B))
+    begin
+    x[0]=0;
+    x[1]=0;
+    x[2]=0;
+    cnt1=1;
+    cnt2=1;
+    clear1=0;
+    clear2=0;
+    end
+  end
+  always @ (*)
+    begin
+    if((~A)&(~B))
+    begin
+    cnt1=1;
+    cnt2=1;
+    clear1=0;
+    clear2=0;
+
+    end
+  end
+   
+//reset counter125
+always @ (*)
+begin
+if(TA|TB) clearF=1;
+else clearF=0;
+end
+
+
+// go to flasher
+always @ (*)
+begin
+  if(F[0]&F[1]&F[2]&F[3]&F[4]&F[6])
+    begin
+      x[0]=1;
+      x[1]=0;
+      x[2]=0;
+      clearF=1;
+      cnt1=0;
+      cnt2=0;
+  end
+ end   
+
+
+//reset counter5
+always @ (*)
+begin
+  if(x[0]&(~TA)) clear5FA = 1;
+  else clear5FA=0;
+end
+
+always @ (*)
+begin
+  if(x[0]&(~TB)) clear5FB = 1;
+  else clear5FB=0;
+  end
+
+
+  //Exit from counter5
+  always @ (*)
+  begin
+    if(x[0]&F5A[6]&F5A[4])
+      begin 
+        x[0]=0;
+        x[1]=0;
+        x[2]=0;
+        cnt1=1;
+        cnt2=1;
+        clear5FA=1;
+      end
+    if(x[0]&F5B[6]&F5B[4])
+      begin 
+        x[0]=0;
+        x[1]=0;
+        x[2]=0;
+        cnt1=1;
+        cnt2=1;
+        clear5FB=1;
+      end 
+  end  
+
+
+//for change color of light
+//000 light A is green
+//001 both are red
+//010 B is green
+//011 both are red
+//100 flasher
+always @(*)
+
+case(x)
+  3'b000 : if(Q2[0]& Q2[3])
+        begin
+        x[2] = 1;
+        clear1 = 1;
+        clear2 = 1;
+        end
+  3'b001 : if(Q1[1]& Q1[3])
+        begin
+        x[1] = 1;
+        x[2] = 0;
+        clear1 = 1;
+        clear2 = 1;
+        end
+  3'b010 : if(Q2[2]& Q2[3])
+        begin
+        x[1] = 1;
+        x[2] = 1;
+        clear1 = 1;
+        clear2 = 1;
+        end 
+  3'b011 : if(Q1[1]& Q1[3])
+        begin
+        
+        x[1] = 0;
+        x[2] = 0;
+        x[0] = 0;
+        clear1 = 1;
+        clear2 = 1;
+        end
+    endcase
+//this is for if we are not in flasher mode and output of first counter is 0 change clear to 0
+ always @(*)
+ 
+ if(!Q1[0]&!Q1[1]&!Q1[2]&!Q1[3]& ~x[0])
+	begin
+		clear1 = 0;
+		clear2 = 0;
+	end
+	
+	//this is for if counter1 is 9 reset that
+	always @(*)
+	if(Q1[0]&Q1[3])
+	  clear1=1;
+   //this is for if we are not in flasher mode make t1 and t2 0 and else toggle it for flasher time it is my mux input for alight and b light
+	always @(*)
+	begin
+		if(~x[0])
+			begin
+			T1=0;
+			T2=0;
+			end
+			end
+		always @(posedje)
+			begin
+			T1=~T1;
+			T2=~T2;
+			end      
+	        
+	 endmodule

@@ -1,0 +1,178 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\asus\Documents\third term fall\manteghi\hw12
+T_opt
+V_KRLKQ=l1NzeC17Q?I4Cz1
+04 9 4 work mux2x1_df fast 0
+=1-d2e5dfdd9292-587b3acf-3-1bb4
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1c;51
+vcounter
+V2YAo=4HG9L>bz0Q50Q`7?0
+r1
+31
+I0^G_<SiRR2RmAz>6acO7;0
+Z0 dC:\Users\asus\Documents\third term fall\manteghi\final proj
+w1484470675
+8C:\Users\asus\Documents\third term fall\manteghi\final proj\counter.v
+FC:\Users\asus\Documents\third term fall\manteghi\final proj\counter.v
+L0 1
+Z1 OL;L;10.1c;51
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!s90 -reportprogress|300|-work|work|-vopt|C:\Users\asus\Documents\third term fall\manteghi\final proj\counter.v|
+!i10b 1
+!s100 2f;X1N3aak:g_Gn]R[_5o0
+!s108 1484470682.954000
+!s107 C:\Users\asus\Documents\third term fall\manteghi\final proj\counter.v|
+vCounter125
+Vfh72L;2198z`ZYR999e9:1
+r1
+31
+I`X<0AH4P<nEF5HRU0@5=82
+Z3 dC:\Users\asus\Documents\third term fall\manteghi\final proj
+w1484470496
+8C:\Users\asus\Documents\third term fall\manteghi\final proj\counter125.v
+FC:\Users\asus\Documents\third term fall\manteghi\final proj\counter125.v
+L0 1
+R1
+R2
+n@counter125
+!s85 0
+!s90 -reportprogress|300|-work|work|-vopt|C:\Users\asus\Documents\third term fall\manteghi\final proj\counter125.v|
+!s100 OL7BPFnCU:4CEbjJb;bW61
+!s108 1484470506.952000
+!s107 C:\Users\asus\Documents\third term fall\manteghi\final proj\counter125.v|
+!i10b 1
+vD_FF
+VOlbKz_kMzNEAgKAlSiI9T3
+r1
+31
+Id@4CRCO?z5koWI;[X^8E80
+R3
+w1484467552
+8C:\Users\asus\Documents\third term fall\manteghi\final proj\Dflipflop.v
+FC:\Users\asus\Documents\third term fall\manteghi\final proj\Dflipflop.v
+L0 1
+R1
+R2
+n@d_@f@f
+!s85 0
+!s100 @]?8TBgB<oRKoae4@ZYi^1
+!s90 -reportprogress|300|-work|work|-vopt|C:\Users\asus\Documents\third term fall\manteghi\final proj\Dflipflop.v|
+!s108 1484470506.614000
+!s107 C:\Users\asus\Documents\third term fall\manteghi\final proj\Dflipflop.v|
+!i10b 1
+vmux2x1_df
+VbHh`JCgU=M0AI3I2Am[zL2
+r1
+31
+IR_kI5C6fP?E7<iP<AgWVV1
+R3
+w1484219255
+8C:/Users/asus/Documents/third term fall/manteghi/final proj/mux2.v
+FC:/Users/asus/Documents/third term fall/manteghi/final proj/mux2.v
+L0 2
+R1
+R2
+!s85 0
+!s100 mnTYY3h?R>lCLZMl[9<CO2
+!s108 1484470506.039000
+!s107 C:/Users/asus/Documents/third term fall/manteghi/final proj/mux2.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Documents/third term fall/manteghi/final proj/mux2.v|
+!i10b 1
+vMux4_2
+V:QD4FhiIF841HW2HRzdf_0
+r1
+31
+I7zafHhV^hEd2]Ri[EgWVc3
+R3
+w1484219357
+8C:/Users/asus/Documents/third term fall/manteghi/final proj/4mux2.v
+FC:/Users/asus/Documents/third term fall/manteghi/final proj/4mux2.v
+L0 1
+R1
+R2
+n@mux4_2
+!s85 0
+!s100 IE_L8J^O6UbOG3;HaXd;60
+!s108 1484470506.418000
+!s107 C:/Users/asus/Documents/third term fall/manteghi/final proj/4mux2.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Documents/third term fall/manteghi/final proj/4mux2.v|
+!i10b 1
+vmux4x1_bh
+VMOJ=f^nH0iaUf7?;NLXQC2
+r1
+31
+IH:5NKOaBZFG>F<03inzN=2
+R3
+w1484219055
+8C:/Users/asus/Documents/third term fall/manteghi/final proj/Mux.v
+FC:/Users/asus/Documents/third term fall/manteghi/final proj/Mux.v
+L0 1
+R1
+R2
+!s85 0
+!s100 <on6AZ5NGAiF]g4=db6jS2
+!s108 1484470505.403000
+!s107 C:/Users/asus/Documents/third term fall/manteghi/final proj/Mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Documents/third term fall/manteghi/final proj/Mux.v|
+!i10b 1
+vT_FF
+VOd0VOdYPI<NOQRhJaAX:M3
+r1
+31
+Igg3I3mU_C<UNb20aAT:Ac3
+R3
+w1484219312
+8C:/Users/asus/Documents/third term fall/manteghi/final proj/Tflipflop.v
+FC:/Users/asus/Documents/third term fall/manteghi/final proj/Tflipflop.v
+L0 2
+R1
+R2
+n@t_@f@f
+!s85 0
+!s100 gIcG<ZfB2R]Q2:N=HeIM=1
+!s108 1484470506.232000
+!s107 C:/Users/asus/Documents/third term fall/manteghi/final proj/Tflipflop.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Documents/third term fall/manteghi/final proj/Tflipflop.v|
+!i10b 1
+vtestbench
+VhGfW:390DM[oDMzegDH9`2
+r1
+31
+IJl1>M?=8cMOl_<ECniX^;1
+R3
+w1484467141
+8C:\Users\asus\Documents\third term fall\manteghi\final proj\testbench.v
+FC:\Users\asus\Documents\third term fall\manteghi\final proj\testbench.v
+L0 1
+R1
+R2
+!s85 0
+!s100 RT`4_HMFT?Wm<iJP6z>W13
+!s90 -reportprogress|300|-work|work|-vopt|C:\Users\asus\Documents\third term fall\manteghi\final proj\testbench.v|
+!s108 1484470505.846000
+!s107 C:\Users\asus\Documents\third term fall\manteghi\final proj\testbench.v|
+!i10b 1
+vtraffic_light
+V_U]AKCBT`U4W8>W:MN`G;1
+r1
+31
+I;9MNzTjADVBAVNX1ab7;@3
+R3
+w1484220419
+8C:\Users\asus\Documents\third term fall\manteghi\final proj\traffic_light.v
+FC:\Users\asus\Documents\third term fall\manteghi\final proj\traffic_light.v
+L0 1
+R1
+R2
+!s85 0
+!s100 @n2k[06ZZHgEnJN9d;JA]1
+!s90 -reportprogress|300|-work|work|-vopt|C:\Users\asus\Documents\third term fall\manteghi\final proj\traffic_light.v|
+!s108 1484470505.636000
+!s107 C:\Users\asus\Documents\third term fall\manteghi\final proj\traffic_light.v|
+!i10b 1

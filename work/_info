@@ -1,0 +1,187 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\asus\Documents\third term fall\manteghi\hw12
+T_opt
+V_KRLKQ=l1NzeC17Q?I4Cz1
+04 9 4 work mux2x1_df fast 0
+=1-d2e5dfdd9292-587b3acf-3-1bb4
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dC:\Users\asus\Documents\third term fall\manteghi\hw12
+T_opt1
+V^J3gTcM9UVo`aG28ZJFGP0
+04 9 4 work testbench fast 0
+=1-d2e5dfdd9292-587b7946-1a0-1c08
+R1
+n@_opt1
+R2
+R3
+vcounter
+V2YAo=4HG9L>bz0Q50Q`7?0
+r1
+31
+I7AR^GZ;;Sg0TgoF3I8j<43
+Z4 dC:\Users\asus\Documents\third term fall\manteghi\final proj
+w1484481287
+8C:/Users/asus/Desktop/final proj/counter.v
+FC:/Users/asus/Desktop/final proj/counter.v
+L0 1
+Z5 OL;L;10.1c;51
+Z6 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 =o<i[c3=icMP86ncn_Y3j2
+!s108 1484637525.748000
+!s107 C:/Users/asus/Desktop/final proj/counter.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/counter.v|
+!s85 0
+!i10b 1
+vCounter125
+Vfh72L;2198z`ZYR999e9:1
+r1
+31
+IT0ibKkkJQaT2kK=>@?J0;1
+R4
+w1484481457
+8C:/Users/asus/Desktop/final proj/counter125.v
+FC:/Users/asus/Desktop/final proj/counter125.v
+L0 1
+R5
+R6
+n@counter125
+!s100 d6c8=mkQcQARkHG=Jkjc>3
+!s108 1484637525.961000
+!s107 C:/Users/asus/Desktop/final proj/counter125.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/counter125.v|
+!s85 0
+!i10b 1
+vD_FF
+VOlbKz_kMzNEAgKAlSiI9T3
+r1
+31
+IN:6`lGSCVZ;0<QEdF5V9h2
+R4
+w1484467552
+8C:/Users/asus/Desktop/final proj/Dflipflop.v
+FC:/Users/asus/Desktop/final proj/Dflipflop.v
+L0 1
+R5
+R6
+n@d_@f@f
+!s100 iGVo:EF<<5aaJ7LE4iNKm2
+!s108 1484637526.174000
+!s107 C:/Users/asus/Desktop/final proj/Dflipflop.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/Dflipflop.v|
+!s85 0
+!i10b 1
+vmux2x1_df
+VbHh`JCgU=M0AI3I2Am[zL2
+r1
+31
+IW6>JR<4Cn6Ad;R=lCOYb[3
+R4
+w1484486146
+8C:/Users/asus/Desktop/final proj/mux2.v
+FC:/Users/asus/Desktop/final proj/mux2.v
+L0 2
+R5
+R6
+!s100 A;W^K9AAi503N@1^;P=7M1
+!s108 1484637526.591000
+!s107 C:/Users/asus/Desktop/final proj/mux2.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/mux2.v|
+!s85 0
+!i10b 1
+vMux4_2
+VAzW]oh9M=1g0<GaR1M8cC3
+r1
+31
+IFMjlh2K1Cd=fElUKF3c@<3
+R4
+w1484486511
+8C:/Users/asus/Desktop/final proj/4mux2.v
+FC:/Users/asus/Desktop/final proj/4mux2.v
+L0 1
+R5
+R6
+n@mux4_2
+!s100 Af2FihYZWiS<dXHeR`jR11
+!s108 1484637525.528000
+!s107 C:/Users/asus/Desktop/final proj/4mux2.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/4mux2.v|
+!s85 0
+!i10b 1
+vmux4x1_bh
+VMOJ=f^nH0iaUf7?;NLXQC2
+r1
+31
+INd@MV6BKReKn63U?07e@l2
+R4
+w1484491848
+8C:/Users/asus/Desktop/final proj/Mux.v
+FC:/Users/asus/Desktop/final proj/Mux.v
+L0 1
+R5
+R6
+!s100 Xcd7Kn162Q_[li2Xf7`4H3
+!s108 1484637526.380000
+!s107 C:/Users/asus/Desktop/final proj/Mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/Mux.v|
+!s85 0
+!i10b 1
+vT_FF
+IeB2EMe6n1o=9TF^D8nco<2
+VOd0VOdYPI<NOQRhJaAX:M3
+R4
+w1484489496
+8C:/Users/asus/Desktop/final proj/Tflipflop.v
+FC:/Users/asus/Desktop/final proj/Tflipflop.v
+L0 2
+R5
+r1
+31
+R6
+n@t_@f@f
+!s100 7e5nI:`44Dd=mdESGLKjA1
+!s108 1484637527.018000
+!s107 C:/Users/asus/Desktop/final proj/Tflipflop.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/Tflipflop.v|
+!i10b 1
+!s85 0
+vtestbench
+VhGfW:390DM[oDMzegDH9`2
+r1
+!s85 0
+31
+IGbgcb1IA6?;G2YQNKAg2`3
+R4
+w1484639504
+8C:\Users\asus\Desktop\final proj\testbench.v
+FC:\Users\asus\Desktop\final proj\testbench.v
+L0 1
+R5
+!s90 -reportprogress|300|-work|work|-vopt|C:\Users\asus\Desktop\final proj\testbench.v|
+R6
+!i10b 1
+!s100 C^j;d1`JJSR4][]e>]KzP1
+!s108 1484639515.614000
+!s107 C:\Users\asus\Desktop\final proj\testbench.v|
+vtraffic_light
+V_U]AKCBT`U4W8>W:MN`G;1
+r1
+31
+I=9^4Cb01D[?5Sff`RSATk3
+R4
+w1484593244
+8C:/Users/asus/Desktop/final proj/traffic_light.v
+FC:/Users/asus/Desktop/final proj/traffic_light.v
+L0 1
+R5
+R6
+!s100 ?c_]Z9A0gRD@QG_m9c3g92
+!s108 1484637527.249000
+!s107 C:/Users/asus/Desktop/final proj/traffic_light.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/asus/Desktop/final proj/traffic_light.v|
+!s85 0
+!i10b 1

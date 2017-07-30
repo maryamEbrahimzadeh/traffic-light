@@ -1,0 +1,64 @@
+{C:/Users/asus/Documents/third term fall/manteghi/final proj/Mux.v} {1 {vlog -work work -vopt {C:/Users/asus/Documents/third term fall/manteghi/final proj/Mux.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux4x1_bh
+
+Top level modules:
+	mux4x1_bh
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/traffic_light.v} {1 {vlog -work work -vopt {C:\Users\asus\Documents\third term fall\manteghi\final proj\traffic_light.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module traffic_light
+
+Top level modules:
+	traffic_light
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/counter125.v} {1 {vlog -work work -vopt {C:/Users/asus/Documents/third term fall/manteghi/final proj/counter125.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module Counter125
+
+Top level modules:
+	Counter125
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/counter.v} {1 {vlog -work work -vopt {C:/Users/asus/Documents/third term fall/manteghi/final proj/counter.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/Dflipflop.v} {1 {vlog -work work -vopt {C:/Users/asus/Documents/third term fall/manteghi/final proj/Dflipflop.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module D_FF
+
+Top level modules:
+	D_FF
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/mux2.v} {1 {vlog -work work -vopt {C:/Users/asus/Documents/third term fall/manteghi/final proj/mux2.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux2x1_df
+
+Top level modules:
+	mux2x1_df
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/4mux2.v} {1 {vlog -work work -vopt {C:\Users\asus\Documents\third term fall\manteghi\final proj\4mux2.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module Mux4_2
+
+Top level modules:
+	Mux4_2
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/Tflipflop.v} {1 {vlog -work work -vopt {C:\Users\asus\Documents\third term fall\manteghi\final proj\Tflipflop.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module T_FF
+
+Top level modules:
+	T_FF
+
+} {} {}} {C:/Users/asus/Documents/third term fall/manteghi/final proj/testbench.v} {1 {vlog -work work -vopt {C:\Users\asus\Documents\third term fall\manteghi\final proj\testbench.v}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}}

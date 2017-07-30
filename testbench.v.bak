@@ -1,0 +1,40 @@
+module testbench;
+reg A,B,R,Clk,TA,TB;
+wire [0:3] A_Time_L;
+wire [0:3] A_Time_H;
+wire [0:3] B_Time_L;
+wire [0:3] B_Time_H;
+wire A_light,B_light;
+wire Q;
+reg D;
+D_FF d (Q,D,Clk);
+initial
+begin
+  always
+  #1 Clk = ~Clk;
+  D = 1
+  #3 D = 0;
+end
+//traffic_light traffic_light (TA,TB,A,B,R,Clk,A_Time_L,A_Time_H,B_Time_L,B_Time_H,A_light,B_light);
+//initial
+ //  begin
+  // Clk = 1;
+  // A=0;
+ //  B=0;
+ //  R=0;
+//   TA=1;
+//   TB=1;
+ //  #400 A=1;
+//   #50 R=1;
+ //  Clk = 0;
+  // #1000 $finish; 
+  // end
+// always
+  // #1 Clk = ~Clk;
+  
+   
+
+endmodule
+
+
+

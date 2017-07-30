@@ -1,0 +1,43 @@
+module Counter125 (Clear,Count,Q,Clk);
+ input Clear,Count,Clk;
+  
+ output [0:6] Q;
+  
+ //reg [0:6] Q;
+ 
+ wire [0:6] D;
+ 
+ Q[0] = 0;
+ Q[1] = 0;
+ Q[2] = 0;
+ Q[3] = 0;
+ 
+ wire h1;
+ wire h2;
+ wire h3;
+ wire h4;
+ wire h5;
+ wire h6;
+ wire h7;
+ assign h7 = (((~Clear)&Count)&Q[0]&Q[1]&Q[2]&Q[3]&Q[4]&Q[5])^Q[6];
+ assign h6 = (((~Clear)&Count)&Q[0]&Q[1]&Q[2]&Q[3]&Q[4])^Q[5];
+ assign h5 = (((~Clear)&Count)&Q[0]&Q[1]&Q[2]&Q[3])^Q[4];
+ assign h4 = (((~Clear)&Count)&Q[0]&Q[1]&Q[2]) ^ Q[3];
+ assign h3 = (((~Clear)&Count)&Q[0]&Q[1]) ^ Q[2];
+ assign h2 = (((~Clear)&Count)&Q[0]) ^ Q[1];
+ assign h1 = (((~Clear)&Count)) ^ Q[0];
+ assign D[0] = h1&(~Clear);
+ assign D[1] = h2&(~Clear);
+ assign D[2] = h3&(~Clear);
+ assign D[3] = h4&(~Clear);
+ assign D[4] = h5&(~Clear);
+ assign D[5] = h6&(~Clear);
+ assign D[6] = h7&(~Clear);
+ Dflipflop d1 (Q[0],D[0],Clk);
+ Dflipflop d2 (Q[1],D[1],Clk);
+ Dflipflop d3 (Q[2],D[2],Clk);
+ Dflipflop d4 (Q[3],D[3],Clk);
+ Dflipflop d5 (Q[4],D[4],Clk);
+ Dflipflop d6 (Q[5],D[5],Clk);
+ Dflipflop d7 (Q[6],D[6],Clk);
+endmodule
